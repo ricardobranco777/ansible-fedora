@@ -33,6 +33,7 @@
       - gnome-tweaks
       - gnutls-utils
       - golang-bin
+      - jetbrains-mono-fonts-all
       - jq
       - ImageMagick
       - keepassxc
