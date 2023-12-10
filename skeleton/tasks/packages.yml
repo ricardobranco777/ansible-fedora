@@ -23,6 +23,7 @@
       - gcc
       - git
       - gnome-extensions-app
+      - gnome-shell-extension-appindicator
       - gnome-shell-extension-apps-menu
       - gnome-shell-extension-gsconnect
       - gnome-shell-extension-launch-new-instance
