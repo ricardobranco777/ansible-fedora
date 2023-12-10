@@ -54,6 +54,7 @@
       - pigz
       - podman
       - openssl
+      - python3-devel
       - python3-virtualenv
       - qemu-tools
       - rclone
