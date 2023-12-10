@@ -1,0 +1,22 @@
+---
+- name: Install Docker repo
+  shell: sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
+  args:
+    creates: /etc/yum.repos.d/docker-ce.repo
+  tags: ['dnf', 'docker']
+
+- name: Install Docker packages
+  dnf:
+    name:
+      - docker-ce
+    state: present
+  tags: ['dnf', 'docker']
+
+- name: Modify /etc/default/grub
+  replace:
+    path: /etc/default/grub
+    regexp: '^(GRUB_CMDLINE_LINUX="[\w](?!.*\b{{ item }}\b).*)"$'
+    replace: '\1 {{ item }}"'
+  with_items:
+    - "cgroup_enable=memory"
+  tags: ['docker']

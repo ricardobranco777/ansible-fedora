@@ -1,0 +1,14 @@
+---
+- name: Install Yubikey packages
+  dnf:
+    name:
+      - pam-u2f 
+      - pamu2fcfg
+      - pam_yubico
+      - ykpers
+      - yubico-piv-tool
+      - yubikey-manager
+      - yubikey-manager-qt
+      - yubikey-personalization-gui
+    state: present
+  tags: ['dnf', 'yubikey']

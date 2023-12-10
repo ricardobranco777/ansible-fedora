@@ -1,0 +1,13 @@
+---
+- name: Install Chrome repo
+  shell: sudo dnf config-manager --set-enabled google-chrome
+  args:
+    creates: /etc/yum.repos.d/google-chrome.repo
+  tags: ['dnf', 'chrome']
+
+- name: Install Chrome packages
+  dnf:
+    name:
+      - google-chrome-stable
+    state: present
+  tags: ['dnf', 'chrome']

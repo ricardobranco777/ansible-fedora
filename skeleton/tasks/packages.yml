@@ -1,0 +1,108 @@
+---
+- name: Upgrade all packages
+  dnf:
+    name: "*"
+    state: latest
+  tags: ['dnf']
+
+- name: Install packages
+  dnf:
+    name:
+      - avahi-tools
+      - bind-utils
+      - blueman-nautilus
+      - bsdtar
+      - btrfs-progs
+      - cifs-utils
+      - curl
+      - distribution-gpg-keys
+      - exfatprogs
+      - e2fsprogs
+      - fakeroot
+      - firefox
+      - gcc
+      - git
+      - gnome-extensions-app
+      - gnome-shell-extension-apps-menu
+      - gnome-shell-extension-gsconnect
+      - gnome-shell-extension-launch-new-instance
+      - gnome-shell-extension-places-menu
+      - gnome-shell-extension-window-list
+      - gnome-tweaks
+      - gnutls-utils
+      - golang-bin
+      - jq
+      - ImageMagick
+      - keepassxc
+      - libvirt-client-qemu
+      - lsscsi
+      - lshw
+      - lsof
+      - ltrace
+      - lynx
+      - make
+      - mtr
+      - nautilus-gsconnect
+      - netcat
+      - net-tools
+      - nextcloud-client
+      - nmap
+      - nmap-ncat
+      - nss-tools
+      - patch
+      - perltidy
+      - pigz
+      - podman
+      - openssl
+      - python3-virtualenv
+      - qemu-tools
+      - rclone
+      - rpcbind
+      - rsync
+      - screen
+      - sg3_utils
+      - ShellCheck
+      - smartmontools
+      - snapd
+      - socat
+      - strace
+      - subversion
+      - tcpdump
+      - terminator
+      - telnet
+      - traceroute
+      - transmission
+      - unrar
+      - unzip
+      - vim
+      - virt-manager
+      - virt-viewer
+      - xfsprogs
+      - xsel
+      - wget
+      - zip
+      - zstd
+    state: present
+  tags: ['dnf']
+
+- name: Install package groups
+  dnf:
+    name:
+      - '@c-development'
+      - '@container-management'
+      - '@development-tools'
+    state: present
+  tags: ['dnf']
+
+- name: Uninstall packages
+  dnf:
+    name:
+      - cups
+      - rhythmbox
+    state: absent
+  tags: ['dnf']
+
+- name: Autoremove unneeded packages installed as dependencies
+  dnf:
+    autoremove: yes
+  tags: ['dnf']
