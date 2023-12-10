@@ -61,6 +61,7 @@
       - qemu-tools
       - rclone
       - rpcbind
+      - rpmconf
       - rsync
       - screen
       - sg3_utils
