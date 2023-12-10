@@ -15,6 +15,7 @@
       - btrfs-progs
       - cifs-utils
       - curl
+      - dejavu-fonts-all
       - distribution-gpg-keys
       - exfatprogs
       - e2fsprogs
