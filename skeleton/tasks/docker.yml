@@ -20,3 +20,11 @@
   with_items:
     - "cgroup_enable=memory"
   tags: ['docker']
+
+- name: Enable Docker service
+  systemd_service:
+    name: docker
+    enabled: true
+    masked: no
+    state: started
+  tags: ['docker']
