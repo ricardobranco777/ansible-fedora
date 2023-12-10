@@ -42,6 +42,7 @@
       - ltrace
       - lynx
       - make
+      - mc
       - mtr
       - nautilus-gsconnect
       - netcat
