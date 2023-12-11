@@ -75,7 +75,6 @@
       - strace
       - subversion
       - tcpdump
-      - terminator
       - telnet
       - thunderbird
       - thunderbird-wayland
