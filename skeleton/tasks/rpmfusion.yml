@@ -1,0 +1,37 @@
+---
+- name: Install RPM Fusion Free key
+  rpm_key:
+    # key: https://rpmfusion.org/keys?action=AttachFile&do=get&target=RPM-GPG-KEY-rpmfusion-free-fedora-2020
+    key: /usr/share/distribution-gpg-keys/rpmfusion/RPM-GPG-KEY-rpmfusion-free-fedora-2020
+    state: present
+  tags: ['dnf', 'rpmfusion']
+
+- name: Install RPM Fusion Non-Free key
+  rpm_key:
+    # key: https://rpmfusion.org/keys?action=AttachFile&do=get&target=RPM-GPG-KEY-rpmfusion-nonfree-fedora-2020
+    key: /usr/share/distribution-gpg-keys/rpmfusion/RPM-GPG-KEY-rpmfusion-nonfree-fedora-2020
+    state: present
+  tags: ['dnf', 'rpmfusion']
+
+- name: Install RPM Fusion repos
+  dnf:
+    name:
+      - https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-39.noarch.rpm
+      - https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-39.noarch.rpm
+    state: present
+  tags: ['dnf', 'rpmfusion']
+
+- name: Install RPM Fusion tainted repos
+  dnf:
+    name:
+      - rpmfusion-free-release-tainted
+      - rpmfusion-nonfree-release-tainted
+      - rpmfusion-free-appstream-data
+      - rpmfusion-nonfree-appstream-data
+  tags: ['dnf', 'rpmfusion']
+
+- name: Install RPM Fusion packages
+  dnf:
+    name:
+      - vlc
+  tags: ['dnf', 'rpmfusion']
