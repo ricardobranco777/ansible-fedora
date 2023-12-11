@@ -38,7 +38,7 @@
       - jq
       - ImageMagick
       - keepassxc
-      - libvirt-client-qemu
+      - libvirt-client
       - lsscsi
       - lshw
       - lsof
