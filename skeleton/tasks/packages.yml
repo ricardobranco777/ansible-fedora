@@ -105,6 +105,7 @@
 - name: Uninstall packages
   dnf:
     name:
+      - bash-color-prompt
       - cups
       - rhythmbox
     state: absent
