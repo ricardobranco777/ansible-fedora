@@ -19,6 +19,7 @@
     replace: '\1 {{ item }}"'
   with_items:
     - "cgroup_enable=memory"
+    - "intel_iommu=1"
   tags: ['docker']
 
 - name: Enable Docker service
