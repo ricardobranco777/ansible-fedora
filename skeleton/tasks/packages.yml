@@ -21,6 +21,7 @@
       - e2fsprogs
       - fakeroot
       - firefox
+      - firefox-wayland
       - gcc
       - git
       - gnome-extensions-app
@@ -77,6 +78,7 @@
       - terminator
       - telnet
       - thunderbird
+      - thunderbird-wayland
       - tilix
       - traceroute
       - transmission
