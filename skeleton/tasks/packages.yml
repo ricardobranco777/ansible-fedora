@@ -38,6 +38,7 @@
       - jq
       - ImageMagick
       - keepassxc
+      - libva-utils
       - libvirt-client
       - lsscsi
       - lshw
