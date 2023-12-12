@@ -33,5 +33,7 @@
 - name: Install RPM Fusion packages
   dnf:
     name:
+      - intel-media-driver
+      - libavcodec-freeworld
       - vlc
   tags: ['dnf', 'rpmfusion']
