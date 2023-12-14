@@ -35,5 +35,6 @@
     name:
       - intel-media-driver
       - libavcodec-freeworld
+      - libdvdcss
       - vlc
   tags: ['dnf', 'rpmfusion']
