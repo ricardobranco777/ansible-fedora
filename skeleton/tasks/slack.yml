@@ -1,0 +1,21 @@
+---
+- name: Install Slack key
+  rpm_key:
+    key: https://packagecloud.io/gpg.key
+    state: present
+  tags: ['dnf', 'slack']
+
+- name: Install Slack repo
+  yum_repository:
+    name: slack
+    description: slack
+    baseurl: 'https://packagecloud.io/slacktechnologies/slack/fedora/21/$basearch'
+  tags: ['dnf', 'slack']
+
+- name: Install Slack packages
+  dnf:
+    name:
+      - slack
+    state: present
+    update_cache: true
+  tags: ['dnf', 'slack']
