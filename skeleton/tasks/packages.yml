@@ -13,6 +13,7 @@
       - blueman-nautilus
       - bsdtar
       - btrfs-progs
+      - chromium
       - cifs-utils
       - curl
       - dejavu-fonts-all
