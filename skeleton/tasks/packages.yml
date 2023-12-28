@@ -1,10 +1,4 @@
 ---
-- name: Upgrade all packages
-  dnf:
-    name: "*"
-    state: latest
-  tags: ['dnf']
-
 - name: Install packages
   dnf:
     name:
