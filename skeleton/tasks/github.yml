@@ -1,0 +1,13 @@
+---
+- name: Install GH cli repo
+  shell: sudo dnf config-manager --add-repo https://cli.github.com/packages/rpm/gh-cli.repo
+  args:
+    creates: /etc/yum.repos.d/gh-cli.repo
+  tags: ['dnf', 'github']
+
+- name: Install Github packages
+  dnf:
+    name:
+      - gh
+    state: present
+  tags: ['dnf', 'github']
