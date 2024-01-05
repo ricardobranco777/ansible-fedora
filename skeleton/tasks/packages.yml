@@ -3,10 +3,12 @@
   dnf:
     name:
       - avahi-tools
+      - bats
       - bind-utils
       - blueman-nautilus
       - bsdtar
       - btrfs-progs
+      - buildah
       - chromium
       - cifs-utils
       - curl
@@ -68,6 +70,7 @@
       - smartmontools
       - snapd
       - socat
+      - skopeo
       - strace
       - subversion
       - tcpdump
