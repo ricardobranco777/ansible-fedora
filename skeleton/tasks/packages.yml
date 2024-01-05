@@ -67,10 +67,10 @@
       - screen
       - sg3_utils
       - ShellCheck
+      - skopeo
       - smartmontools
       - snapd
       - socat
-      - skopeo
       - strace
       - subversion
       - tcpdump
