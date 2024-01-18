@@ -1,0 +1,20 @@
+---
+- name: Install Tuxedo key
+  rpm_key:
+    key: https://rpm.tuxedocomputers.com/fedora/39/0x54840598.pub.asc
+    state: present
+  tags: ['dnf', 'tuxedo']
+
+- name: Install Tuxedo repo
+  yum_repository:
+    name: tuxedo
+    description: tuxedo
+    baseurl: 'http://rpm.tuxedocomputers.com/fedora/39/$basearch/base'
+    gpgcheck: true
+  tags: ['dnf', 'tuxedo']
+
+- name: Install Tuxedo packages
+  dnf:
+    name:
+      - tuxedo-control-center
+  tags: ['dnf', 'tuxedo']

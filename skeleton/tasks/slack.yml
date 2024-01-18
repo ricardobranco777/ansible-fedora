@@ -10,6 +10,7 @@
     name: slack
     description: slack
     baseurl: 'https://packagecloud.io/slacktechnologies/slack/fedora/21/$basearch'
+    gpgcheck: true
   tags: ['dnf', 'slack']
 
 - name: Install Slack packages
