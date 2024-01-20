@@ -43,6 +43,7 @@
       - ltrace
       - lynx
       - make
+      - man-pages-posix
       - mc
       - mtr
       - nautilus-gsconnect
