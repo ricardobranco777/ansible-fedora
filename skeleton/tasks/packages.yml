@@ -109,6 +109,7 @@
       - bash-color-prompt
       - cups
       - rhythmbox
+      - virtualbox-guest-additions
     state: absent
   tags: ['dnf']
 
