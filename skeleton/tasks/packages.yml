@@ -31,6 +31,7 @@
       - gnome-tweaks
       - gnutls-utils
       - golang-bin
+      - golang-honnef-tools
       - jetbrains-mono-fonts-all
       - jq
       - ImageMagick
