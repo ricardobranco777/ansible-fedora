@@ -10,7 +10,6 @@
     name: tuxedo
     description: tuxedo
     baseurl: 'http://rpm.tuxedocomputers.com/fedora/39/$basearch/base'
-    gpgcheck: true
   tags: ['dnf', 'tuxedo']
 
 - name: Install Tuxedo packages
@@ -18,3 +17,9 @@
     name:
       - tuxedo-control-center
   tags: ['dnf', 'tuxedo']
+
+# Workaround for https://github.com/tuxedocomputers/tuxedo-control-center/issues/354
+- name: Create tuxedo-control-center symlink
+  shell: ln -s /opt/tuxedo-control-center/tuxedo-control-center /usr/bin/
+  args:
+    creates: /usr/bin/tuxedo-control-center
