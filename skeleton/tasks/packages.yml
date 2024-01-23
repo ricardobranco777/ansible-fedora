@@ -4,6 +4,8 @@
     name:
       - avahi-tools
       - bats
+      - bcc
+      - bcc-doc
       - bind-utils
       - blueman-nautilus
       - bsdtar
