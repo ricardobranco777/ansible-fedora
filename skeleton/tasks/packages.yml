@@ -34,6 +34,7 @@
       - gnutls-utils
       - golang-bin
       - golang-honnef-tools
+      - hexchat
       - jetbrains-mono-fonts-all
       - jq
       - ImageMagick
