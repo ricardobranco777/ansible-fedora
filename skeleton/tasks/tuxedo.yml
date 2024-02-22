@@ -9,7 +9,10 @@
   yum_repository:
     name: tuxedo
     description: tuxedo
-    baseurl: 'http://rpm.tuxedocomputers.com/fedora/39/$basearch/base'
+    baseurl: 'https://rpm.tuxedocomputers.com/fedora/39/$basearch/base'
+    enabled: true
+    gpgcheck: true
+    gpgkey: 'https://rpm.tuxedocomputers.com/fedora/39/0x54840598.pub.asc'
   tags: ['dnf', 'tuxedo']
 
 - name: Install Tuxedo packages
