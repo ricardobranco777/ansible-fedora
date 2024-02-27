@@ -58,6 +58,7 @@
       - nmap
       - nmap-ncat
       - nss-tools
+      - oci-seccomp-bpf-hook
       - patch
       - perltidy
       - pigz
