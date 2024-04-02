@@ -75,6 +75,7 @@
       - rpmconf
       - rsync
       - screen
+      - setools-console
       - sg3_utils
       - ShellCheck
       - skopeo
