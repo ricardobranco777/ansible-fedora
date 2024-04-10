@@ -13,6 +13,7 @@
       - buildah
       - chromium
       - cifs-utils
+      - cmake
       - curl
       - dejavu-fonts-all
       - distribution-gpg-keys
