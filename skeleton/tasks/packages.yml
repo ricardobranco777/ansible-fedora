@@ -24,7 +24,9 @@
       - firefox
       - firefox-wayland
       - gcc
+      - gh
       - git
+      - glab
       - gnome-extensions-app
       - gnome-shell-extension-appindicator
       - gnome-shell-extension-apps-menu
