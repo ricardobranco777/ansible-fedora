@@ -13,3 +13,12 @@
       - yubikey-personalization-gui
     state: present
   tags: ['dnf', 'yubikey']
+
+- name: Add custom udev rules for Yubikey
+  copy:
+    src: 70-u2f.rules
+    dest: /etc/udev/rules.d/70-u2f.rules
+    owner: root
+    group: root
+    mode: 0644
+  tags: ['yubikey']
