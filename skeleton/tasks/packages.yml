@@ -22,7 +22,6 @@
       - e2fsprogs
       - fakeroot
       - firefox
-      - firefox-wayland
       - gcc
       - gh
       - git
@@ -51,7 +50,6 @@
       - ltrace
       - lynx
       - make
-      - man-pages-posix
       - mc
       - mtr
       - nautilus-gsconnect

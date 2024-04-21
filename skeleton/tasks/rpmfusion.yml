@@ -16,8 +16,8 @@
 - name: Install RPM Fusion repos
   dnf:
     name:
-      - https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-39.noarch.rpm
-      - https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-39.noarch.rpm
+      - https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-40.noarch.rpm
+      - https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-40.noarch.rpm
     state: present
   tags: ['dnf', 'rpmfusion']
 
@@ -36,5 +36,6 @@
       - intel-media-driver
       - libavcodec-freeworld
       - libdvdcss
+      - man-pages-posix
       - vlc
   tags: ['dnf', 'rpmfusion']
