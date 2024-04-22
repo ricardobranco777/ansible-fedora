@@ -63,6 +63,7 @@
       - patch
       - perltidy
       - pigz
+      - pipewire-codec-aptx
       - podman
       - podman-remote
       - podmansh
