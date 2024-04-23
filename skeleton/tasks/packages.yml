@@ -13,6 +13,7 @@
       - buildah
       - chromium
       - cifs-utils
+      - clang
       - cmake
       - curl
       - dejavu-fonts-all
@@ -44,6 +45,7 @@
       - libbsd-devel
       - libva-utils
       - libvirt-client
+      - llvm
       - lsscsi
       - lshw
       - lsof
