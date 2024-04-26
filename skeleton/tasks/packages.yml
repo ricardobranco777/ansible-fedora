@@ -122,6 +122,7 @@
     name:
       - bash-color-prompt
       - cups
+      - mediawriter
       - rhythmbox
       - virtualbox-guest-additions
     state: absent
