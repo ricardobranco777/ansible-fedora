@@ -84,7 +84,6 @@
       - ShellCheck
       - skopeo
       - smartmontools
-      - snapd
       - socat
       - strace
       - subversion
@@ -125,6 +124,7 @@
       - mediawriter
       - open-vm-tools
       - rhythmbox
+      - snapd
       - virtualbox-guest-additions
     state: absent
   tags: ['dnf']
