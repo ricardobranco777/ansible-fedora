@@ -123,6 +123,7 @@
       - bash-color-prompt
       - cups
       - mediawriter
+      - open-vm-tools
       - rhythmbox
       - virtualbox-guest-additions
     state: absent
