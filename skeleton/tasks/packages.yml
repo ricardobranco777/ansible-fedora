@@ -55,6 +55,7 @@
       - make
       - mc
       - mtr
+      - moreutils
       - nautilus-gsconnect
       - netcat
       - net-tools
