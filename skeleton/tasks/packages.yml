@@ -27,6 +27,7 @@
       - gh
       - git
       - glab
+      - glibc-static
       - gnome-extensions-app
       - gnome-shell-extension-appindicator
       - gnome-shell-extension-apps-menu
