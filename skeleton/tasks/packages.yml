@@ -27,7 +27,10 @@
       - gh
       - git
       - glab
+      - glibc-devel
+      - glibc-devel.i686
       - glibc-static
+      - glibc-static.i686
       - gnome-extensions-app
       - gnome-shell-extension-appindicator
       - gnome-shell-extension-apps-menu
