@@ -106,6 +106,7 @@
       - xfsprogs
       - xsel
       - wget
+      - xorg-x11-server-Xvfb
       - zip
       - zstd
     state: present
