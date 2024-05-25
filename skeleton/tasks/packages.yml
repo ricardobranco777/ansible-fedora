@@ -86,6 +86,7 @@
       - screen
       - setools-console
       - sg3_utils
+      - sharutils
       - ShellCheck
       - skopeo
       - smartmontools
