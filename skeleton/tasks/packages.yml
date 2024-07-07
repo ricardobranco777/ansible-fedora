@@ -46,6 +46,7 @@
       - jq
       - ImageMagick
       - keepassxc
+      - kernel-modules-extra
       - libbsd-devel
       - libva-utils
       - libvirt-client
