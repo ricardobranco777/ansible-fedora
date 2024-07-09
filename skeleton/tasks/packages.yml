@@ -129,6 +129,7 @@
       - bash-color-prompt
       - cups
       - fprintd
+      - gnome-user-share
       - mediawriter
       - open-vm-tools
       - rhythmbox
