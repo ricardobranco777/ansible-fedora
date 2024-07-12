@@ -47,6 +47,7 @@
       - ImageMagick
       - keepassxc
       - kernel-modules-extra
+      - lbzip2
       - libbsd-devel
       - libva-utils
       - libvirt-client
