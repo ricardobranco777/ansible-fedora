@@ -109,6 +109,7 @@
       - xfsprogs
       - xsel
       - wget
+      - wodim
       - xorg-x11-server-Xvfb
       - zip
       - zstd
