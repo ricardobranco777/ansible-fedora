@@ -19,8 +19,9 @@
       - dejavu-fonts-all
       - distribution-gpg-keys
       #- dnf5
-      - exfatprogs
       - e2fsprogs
+      - efitools
+      - exfatprogs
       - fakeroot
       - firefox
       - gcc
