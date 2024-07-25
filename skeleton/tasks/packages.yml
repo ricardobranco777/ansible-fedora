@@ -42,6 +42,7 @@
       - gnutls-utils
       - golang-honnef-tools
       - hexchat
+      - httpd-tools
       - jetbrains-mono-fonts-all
       - jq
       - ImageMagick
