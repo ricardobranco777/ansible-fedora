@@ -41,7 +41,6 @@
       - gnome-shell-extension-window-list
       - gnome-tweaks
       - gnutls-utils
-      - golang-honnef-tools
       - hexchat
       - httpd-tools
       - jetbrains-mono-fonts-all
