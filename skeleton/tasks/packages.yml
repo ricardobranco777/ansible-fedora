@@ -18,7 +18,6 @@
       - curl
       - dejavu-fonts-all
       - distribution-gpg-keys
-      #- dnf5
       - e2fsprogs
       - efitools
       - exfatprogs
@@ -52,6 +51,7 @@
       - libbsd-devel
       - libva-utils
       - libvirt-client
+      - lldb
       - llvm
       - lsscsi
       - lshw
