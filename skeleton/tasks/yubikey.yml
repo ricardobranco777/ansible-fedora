@@ -22,11 +22,3 @@
     group: root
     mode: 0644
   tags: ['yubikey']
-
-# Fix for https://github.com/Yubico/yubikey-manager-qt/issues/357
-- name: Fix issue with yubikey gui
-  get_url:
-    url: https://raw.githubusercontent.com/Yubico/yubikey-manager-qt/main/ykman-gui/py/yubikey.py
-    dest: /usr/lib/python3.12/site-packages/yubikey.py
-    mode: '0644'
-    checksum: 'sha256:000ef8225aa8d2f4a8e7bdaf53b470da775ac50cf094ee13a4b1d311c2f7d9cd'
