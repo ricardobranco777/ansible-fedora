@@ -113,6 +113,7 @@
       - wget
       - wodim
       - xorg-x11-server-Xvfb
+      - xrandr
       - zip
       - zstd
     state: present
