@@ -1,13 +1,13 @@
 ---
 - name: Install GH cli repo
-  shell: sudo dnf config-manager --add-repo https://cli.github.com/packages/rpm/gh-cli.repo
+  shell: sudo dnf config-manager addrepo --from-repofile=https://cli.github.com/packages/rpm/gh-cli.repo
   args:
     creates: /etc/yum.repos.d/gh-cli.repo
   tags: ['dnf', 'github']
 
 - name: Install GH cli key
   rpm_key:
-    key: https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x23F3D4EA75716059
+    key: https://cli.github.com/packages/githubcli-archive-keyring.gpg
     state: present
 
 - name: Install GH cli packages
