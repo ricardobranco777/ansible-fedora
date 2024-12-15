@@ -73,6 +73,7 @@
       - nss-tools
       - oci-seccomp-bpf-hook
       - patch
+      - pbzip2
       - perltidy
       - pigz
       - pipewire-codec-aptx
