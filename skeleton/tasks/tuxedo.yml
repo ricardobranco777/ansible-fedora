@@ -19,6 +19,7 @@
   dnf:
     name:
       - tuxedo-control-center
+    state: present
   tags: ['dnf', 'tuxedo']
 
 # Workaround for https://github.com/tuxedocomputers/tuxedo-control-center/issues/354
