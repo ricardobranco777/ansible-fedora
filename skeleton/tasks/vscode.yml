@@ -3,11 +3,9 @@
   shell: sudo dnf config-manager --add-repo https://packages.microsoft.com/yumrepos/vscode/config.repo
   args:
     creates: /etc/yum.repos.d/config.repo
-  tags: ['dnf', 'vscode']
 
 - name: Install VSCode packages
   dnf:
     name:
       - code
     state: present
-  tags: ['dnf', 'vscode']

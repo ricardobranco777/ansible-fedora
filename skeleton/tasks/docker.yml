@@ -3,14 +3,12 @@
   shell: sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
   args:
     creates: /etc/yum.repos.d/docker-ce.repo
-  tags: ['dnf', 'docker']
 
 - name: Install Docker packages
   dnf:
     name:
       - docker-ce
     state: present
-  tags: ['dnf', 'docker']
 
 - name: Modify /etc/default/grub
   replace:
@@ -21,7 +19,6 @@
     - "cgroup_enable=memory"
     - "intel_iommu=on"
     - "iommu=pt"
-  tags: ['docker']
 
 - name: Enable Docker service
   systemd_service:
@@ -29,4 +26,3 @@
     enabled: true
     masked: no
     state: started
-  tags: ['docker']

@@ -3,7 +3,6 @@
   rpm_key:
     key: https://rpm.opera.com/rpmrepo.key
     state: present
-  tags: ['dnf', 'opera']
 
 - name: Install Opera repo
   yum_repository:
@@ -12,7 +11,6 @@
     baseurl: 'https://rpm.opera.com/rpm'
     gpgcheck: true
     gpgkey: 'https://rpm.opera.com/rpmrepo.key'
-  tags: ['dnf', 'opera']
 
 - name: Install Opera packages
   dnf:
@@ -20,4 +18,3 @@
       - opera-stable
     state: present
     update_cache: true
-  tags: ['dnf', 'opera']

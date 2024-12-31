@@ -3,7 +3,6 @@
   rpm_key:
     key: https://packagecloud.io/gpg.key
     state: present
-  tags: ['dnf', 'slack']
 
 - name: Install Slack repo
   yum_repository:
@@ -11,7 +10,6 @@
     description: slack
     baseurl: 'https://packagecloud.io/slacktechnologies/slack/fedora/21/$basearch'
     gpgcheck: false
-  tags: ['dnf', 'slack']
 
 - name: Install Slack packages
   dnf:
@@ -19,11 +17,9 @@
       - slack
     state: present
     update_cache: true
-  tags: ['dnf', 'slack']
 
 - name: Turn off noisy logging by crappy Slack app
   lineinfile:
     path: /usr/share/applications/slack.desktop
     regexp: '^Exec='
     line: 'Exec=/usr/bin/slack -g warn %U'
-  tags: ['slack']

@@ -120,7 +120,6 @@
       - zip
       - zstd
     state: present
-  tags: ['dnf']
 
 - name: Install package groups
   dnf:
@@ -130,7 +129,6 @@
       - '@development-tools'
       - '@virtualization'
     state: present
-  tags: ['dnf']
 
 - name: Uninstall packages
   dnf:
@@ -145,9 +143,7 @@
       - snapd
       - virtualbox-guest-additions
     state: absent
-  tags: ['dnf']
 
 - name: Autoremove unneeded packages installed as dependencies
   dnf:
     autoremove: yes
-  tags: ['dnf']

@@ -12,7 +12,6 @@
       - yubikey-manager-qt
       - yubikey-personalization-gui
     state: present
-  tags: ['dnf', 'yubikey']
 
 - name: Add custom udev rules for Yubikey
   copy:
@@ -21,4 +20,3 @@
     owner: root
     group: root
     mode: 0644
-  tags: ['yubikey']

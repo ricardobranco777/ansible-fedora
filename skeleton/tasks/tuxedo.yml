@@ -3,7 +3,6 @@
   rpm_key:
     key: https://rpm.tuxedocomputers.com/fedora/$releasever/0x54840598.pub.asc
     state: present
-  tags: ['dnf', 'tuxedo']
 
 - name: Install Tuxedo repo
   yum_repository:
@@ -13,14 +12,12 @@
     enabled: true
     gpgcheck: true
     gpgkey: 'https://rpm.tuxedocomputers.com/fedora/$releasever/0x54840598.pub.asc'
-  tags: ['dnf', 'tuxedo']
 
 - name: Install Tuxedo packages
   dnf:
     name:
       - tuxedo-control-center
     state: present
-  tags: ['dnf', 'tuxedo']
 
 # Workaround for https://github.com/tuxedocomputers/tuxedo-control-center/issues/354
 - name: Create tuxedo-control-center symlink

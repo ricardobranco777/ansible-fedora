@@ -3,7 +3,6 @@
   shell: sudo dnf config-manager addrepo --from-repofile=https://cli.github.com/packages/rpm/gh-cli.repo
   args:
     creates: /etc/yum.repos.d/gh-cli.repo
-  tags: ['dnf', 'github']
 
 - name: Install GH cli key
   rpm_key:
@@ -15,4 +14,3 @@
     name:
       - gh
     state: present
-  tags: ['dnf', 'github']
