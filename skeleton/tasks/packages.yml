@@ -51,6 +51,7 @@
       - kernel-modules-extra
       - lbzip2
       - libbsd-devel
+      - libcap-ng-utils
       - libva-utils
       - libvirt-client
       - lldb
