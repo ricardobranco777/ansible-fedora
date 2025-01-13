@@ -104,6 +104,7 @@
       - subversion
       - sysfsutils
       - tcpdump
+      - terminator
       - thunderbird
       - tilix
       - tmux
