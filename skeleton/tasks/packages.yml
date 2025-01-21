@@ -24,6 +24,7 @@
       - exfatprogs
       - fakeroot
       - firefox
+      - ftp
       - gcc
       - gh
       - git
