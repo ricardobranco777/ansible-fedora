@@ -24,7 +24,6 @@
       - exfatprogs
       - fakeroot
       - firefox
-      - ftp
       - gcc
       - gh
       - git
@@ -109,6 +108,7 @@
       - thunderbird
       - tilix
       - tmux
+      - tnftp
       - traceroute
       - transmission
       - unzip
