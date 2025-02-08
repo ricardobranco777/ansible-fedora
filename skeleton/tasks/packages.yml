@@ -83,6 +83,7 @@
       - podman-remote
       - podmansh
       - openssl
+      - p7zip
       - procinfo
       - python3-devel
       - python3-dnf-plugin-versionlock
