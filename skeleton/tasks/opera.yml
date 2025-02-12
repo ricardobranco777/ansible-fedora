@@ -18,3 +18,10 @@
       - opera-stable
     state: present
     update_cache: true
+
+- name: Disable atd
+  systemd:
+    name: atd.service
+    masked: yes
+    enabled: no
+    state: stopped
