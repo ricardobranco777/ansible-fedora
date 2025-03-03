@@ -82,7 +82,6 @@
       - pipewire-codec-aptx
       - podman
       - podman-remote
-      - podmansh
       - openssl
       - p7zip
       - procinfo
