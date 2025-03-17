@@ -2,6 +2,7 @@
 - name: Install packages
   dnf:
     name:
+      - aria2
       - avahi-tools
       - bats
       - bcc
