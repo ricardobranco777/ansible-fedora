@@ -9,6 +9,7 @@
       - bcc-doc
       - bind-utils
       - blueman-nautilus
+      - bmake
       - bsdcat
       - bsdtar
       - btrfs-progs
