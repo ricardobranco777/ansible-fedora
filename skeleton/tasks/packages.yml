@@ -143,7 +143,6 @@
       - bash-color-prompt
       - cups
       - fprintd
-      - gnome-boxes
       - gnome-user-share
       - mediawriter
       - open-vm-tools
