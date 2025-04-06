@@ -66,6 +66,7 @@
       - ltrace
       - lynx
       - make
+      - mandoc
       - mc
       - mtr
       - moreutils
