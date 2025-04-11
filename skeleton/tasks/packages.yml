@@ -56,6 +56,7 @@
       - lbzip2
       - libbsd-devel
       - libcap-ng-utils
+      - libcgroup-tools
       - libva-utils
       - libvirt-client
       - lldb
