@@ -14,8 +14,8 @@
 - name: Install RPM Fusion repos
   dnf:
     name:
-      - https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-40.noarch.rpm
-      - https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-40.noarch.rpm
+      - https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-41.noarch.rpm
+      - https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-41.noarch.rpm
     state: present
 
 - name: Install RPM Fusion tainted repos
@@ -32,5 +32,6 @@
       - intel-media-driver
       - libavcodec-freeworld
       - libdvdcss
+      - pipewire-codec-aptx
       - man-pages-posix
       - vlc

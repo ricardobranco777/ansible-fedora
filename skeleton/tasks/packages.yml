@@ -23,7 +23,6 @@
       - dejavu-fonts-all
       - distribution-gpg-keys
       - e2fsprogs
-      - efitools
       - exfatprogs
       - fakeroot
       - firefox
@@ -81,7 +80,6 @@
       - pbzip2
       - perltidy
       - pigz
-      - pipewire-codec-aptx
       - podman
       - podman-remote
       - openssl
@@ -141,13 +139,21 @@
   dnf:
     name:
       - bash-color-prompt
+      - bluez-cups
+      - braille-printer-app
       - cups
+      - cups-browsed
+      - cups-filters*
       - fprintd
+      - fprintd-pam
       - gnome-user-share
+      - gutenprint
+      - gutenprint-cups
+      - hplip
+      - libppd
       - mediawriter
-      - open-vm-tools
+      - open-vm-tools*
       - rhythmbox
-      - snapd
       - virtualbox-guest-additions
     state: absent
 

@@ -4,11 +4,6 @@
   args:
     creates: /etc/yum.repos.d/gh-cli.repo
 
-- name: Install GH cli key
-  rpm_key:
-    key: https://cli.github.com/packages/githubcli-archive-keyring.gpg
-    state: present
-
 - name: Install GH cli packages
   dnf:
     name:
