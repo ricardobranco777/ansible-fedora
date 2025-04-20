@@ -1,4 +1,4 @@
-Ansible playbook for Fedora 41:
+Ansible playbook for Fedora 42:
 
 `sudo dnf install ansible ansible-collection-community-general`
 
