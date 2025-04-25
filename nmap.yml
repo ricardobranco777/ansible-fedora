@@ -5,15 +5,13 @@
   vars:
     rpm_base_url: "https://nmap.org/dist"
     rpm_packages:
-      - nmap
       - ncat
+      - nmap
+      - nping
 
   tasks:
     - name: Get latest RPM filenames
-      shell: |
-        curl -s {{ rpm_base_url }}/ | \
-        grep -oP '{{ item }}-\d+\.\d+-\d+\.x86_64\.rpm' | \
-        sort -V | tail -1
+      shell: curl -s {{ rpm_base_url }}/ | grep -oP '{{ item }}-[\d\.-]+\.x86_64\.rpm' | sort -V | tail -1
       loop: "{{ rpm_packages }}"
       register: rpm_filenames
       changed_when: false
