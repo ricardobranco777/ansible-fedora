@@ -7,3 +7,7 @@ Check:
 
 Run with:
 `ansible-playbook -v -i inventory.yml main.yml`
+
+
+To install nmap from upstream:
+`ansible-playbook -v -i inventory.yml nmap.yml`

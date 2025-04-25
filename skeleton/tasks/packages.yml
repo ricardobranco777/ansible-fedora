@@ -72,8 +72,6 @@
       - netcat
       - net-tools
       - nextcloud-client
-      - nmap
-      - nmap-ncat
       - nss-tools
       - oci-seccomp-bpf-hook
       - patch

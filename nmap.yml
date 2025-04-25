@@ -1,0 +1,42 @@
+---
+- name: Install latest Nmap and Ncat from upstream on any RPM-based distro
+  hosts: all
+  user: root
+  vars:
+    rpm_base_url: "https://nmap.org/dist"
+    rpm_packages:
+      - nmap
+      - ncat
+
+  tasks:
+    - name: Get latest RPM filenames
+      shell: |
+        curl -s {{ rpm_base_url }}/ | \
+        grep -oP '{{ item }}-\d+\.\d+-\d+\.x86_64\.rpm' | \
+        sort -V | tail -1
+      loop: "{{ rpm_packages }}"
+      register: rpm_filenames
+      changed_when: false
+
+    - name: Set RPM URLs
+      set_fact:
+        rpm_urls: "{{ rpm_filenames.results | map(attribute='stdout') | map('regex_replace', '^', rpm_base_url + '/') }}"
+
+    - name: Install RPMs directly from URL
+      ansible.builtin.dnf:
+        name: "{{ item }}"
+        state: present
+        disable_gpg_check: true
+      loop: "{{ rpm_urls }}"
+
+    - name: Show installed versions
+      command: "{{ item }} --version"
+      register: version_output
+      loop: "{{ rpm_packages }}"
+      changed_when: false
+      ignore_errors: true
+
+    - name: Display installed versions
+      debug:
+        msg: "{{ item.stdout }}"
+      loop: "{{ version_output.results }}"
