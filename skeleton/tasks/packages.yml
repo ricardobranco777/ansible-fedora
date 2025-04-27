@@ -64,11 +64,13 @@
       - ltrace
       - lynx
       - make
+      - mawk
       - mandoc
       - mc
       - mtr
       - moreutils
       - nautilus-gsconnect
+      - nawk
       - netcat
       - net-tools
       - nextcloud-client
