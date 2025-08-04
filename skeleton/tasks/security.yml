@@ -12,13 +12,3 @@
     owner: root
     group: wheel
     mode: 0600
-
-- name: Turn off suid/sgid bits
-  file:
-    path: "{{ item.path }}"
-    mode: "u-s,g-s"
-  ignore_errors: yes
-  loop:
-    # sudo can't be uninstalled in Fedora
-    # Make sure to have `alias sudo=doas`
-    - path: /usr/bin/sudo
