@@ -4,7 +4,6 @@
     name:
       - aria2
       - avahi-tools
-      - bats
       - bcc
       - bcc-doc
       - bind-utils
