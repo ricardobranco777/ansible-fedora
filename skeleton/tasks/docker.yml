@@ -1,0 +1,25 @@
+---
+- name: Install Docker packages
+  dnf:
+    name:
+      - docker-cli
+      - docker-compose
+      - golang-github-rootless-containers-rootlesskit
+    state: present
+
+- name: Modify /etc/default/grub
+  replace:
+    path: /etc/default/grub
+    regexp: '^(GRUB_CMDLINE_LINUX="[\w](?!.*\b{{ item }}\b).*)"$'
+    replace: '\1 {{ item }}"'
+  with_items:
+    - "cgroup_enable=memory"
+    - "intel_iommu=on"
+    - "iommu=pt"
+
+- name: Enable Docker service
+  systemd_service:
+    name: docker
+    enabled: true
+    masked: no
+    state: started
