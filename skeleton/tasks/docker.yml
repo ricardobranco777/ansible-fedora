@@ -23,3 +23,12 @@
     enabled: true
     masked: no
     state: started
+
+- name: Install dockerd-rootless scripts
+  get_url:
+    url: "https://raw.githubusercontent.com/moby/moby/refs/heads/master/contrib/{{ item }}"
+    dest: "/usr/local/bin/{{ item }}"
+    mode: '0555'
+  loop:
+    - dockerd-rootless.sh
+    - dockerd-rootless-setuptool.sh
