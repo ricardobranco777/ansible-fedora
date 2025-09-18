@@ -2,6 +2,5 @@
 - name: Uninstall useless systemd stuff
   dnf:
     name:
-      - systemd-container
       - systemd-networkd
     state: absent
