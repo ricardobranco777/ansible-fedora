@@ -12,3 +12,11 @@
     owner: root
     group: wheel
     mode: 0600
+
+- name: Enable sudo insults
+  copy:
+    src: sudoers.d/insults
+    dest: /etc/sudoers.d/insults
+    owner: root
+    group: root
+    mode: 0600
