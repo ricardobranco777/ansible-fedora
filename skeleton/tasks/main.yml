@@ -6,10 +6,11 @@
 - include_tasks: docker.yml
 - include_tasks: golang.yml
 - include_tasks: chrome.yml
-- include_tasks: brave.yml
 - include_tasks: github.yml
 - include_tasks: yubikey.yml
 - include_tasks: ssh.yml
 - include_tasks: security.yml
+- include_tasks: brave.yml
 - include_tasks: opera.yml
+- include_tasks: vivaldi.yml
 - include_tasks: nosystemd.yml

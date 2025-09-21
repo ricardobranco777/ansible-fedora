@@ -1,0 +1,16 @@
+---
+- name: Install Vivaldi repo
+  shell: sudo dnf-3 config-manager --add-repo https://repo.vivaldi.com/archive/vivaldi-fedora.repo
+  args:
+    creates: /etc/yum.repos.d/vivaldi-fedora.repo
+
+- name: Install Vivaldi key
+  rpm_key:
+    key: https://repo.vivaldi.com/archive/linux_signing_key.pub
+    state: present
+
+- name: Install Vivaldi packages
+  dnf:
+    name:
+      - vivaldi-stable
+    state: present
