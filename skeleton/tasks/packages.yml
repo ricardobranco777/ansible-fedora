@@ -120,6 +120,7 @@
       - wodim
       - xorg-x11-server-Xvfb
       - xrandr
+      - yq
       - zip
       - zstd
     state: present
