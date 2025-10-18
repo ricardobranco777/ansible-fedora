@@ -92,6 +92,7 @@
       - rpcbind
       - rpmconf
       - rsync
+      - ruff
       - setools-console
       - sg3_utils
       - sharutils
