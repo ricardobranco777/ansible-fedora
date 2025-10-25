@@ -45,6 +45,7 @@
       - gperf
       - httpd-tools
       - ImageMagick
+      - inotify-tools
       - jetbrains-mono-fonts-all
       - jq
       - kata-containers
