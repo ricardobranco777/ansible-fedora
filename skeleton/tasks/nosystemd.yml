@@ -3,6 +3,7 @@
   dnf:
     name:
       - systemd-networkd
+      - systemd-resolved
     state: absent
 
 - name: Disable useless and broken resolved
