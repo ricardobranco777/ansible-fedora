@@ -4,3 +4,10 @@
     name:
       - systemd-networkd
     state: absent
+
+- name: Disable useless and broken resolved
+  systemd:
+    name: systemd-resolved.service
+    masked: yes
+    enabled: no
+    state: stopped
