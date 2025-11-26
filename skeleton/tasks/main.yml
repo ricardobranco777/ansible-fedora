@@ -12,3 +12,4 @@
 - include_tasks: chrome.yml
 - include_tasks: vivaldi.yml
 - include_tasks: nosystemd.yml
+- include_tasks: dnsmasq.yml

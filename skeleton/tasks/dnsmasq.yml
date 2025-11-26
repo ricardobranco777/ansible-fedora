@@ -1,0 +1,10 @@
+---
+- name: Configure NetworkManager to use dnsmasq
+  copy:
+    dest: /etc/NetworkManager/conf.d/dns.conf
+    owner: root
+    group: root
+    mode: '0644'
+    content: |
+      [main]
+      dns=dnsmasq
