@@ -52,6 +52,7 @@
       - keepassxc
       - kernel-modules-extra
       - lbzip2
+      - ldns-utils
       - libarchive-devel
       - libbsd-devel
       - libcap-ng-utils
