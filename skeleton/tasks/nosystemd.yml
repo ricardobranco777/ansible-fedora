@@ -6,9 +6,9 @@
       - systemd-resolved
     state: absent
 
-- name: Disable useless and broken resolved
+- name: Disable useless and broken oomd
   systemd:
-    name: systemd-resolved.service
+    name: systemd-oomd.service
     masked: yes
     enabled: no
     state: stopped
