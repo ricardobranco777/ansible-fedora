@@ -76,7 +76,6 @@
       - nawk
       - netcat
       - net-tools
-      - nextcloud-client
       - nss-tools
       - oci-seccomp-bpf-hook
       - patch
@@ -89,6 +88,7 @@
       - procinfo
       - python3-devel
       - python3-dnf-plugin-versionlock
+      - python3-gpg
       - python3-virtualenv
       - qemu-tools
       - rclone
