@@ -141,6 +141,8 @@
 - name: Uninstall packages
   dnf:
     name:
+      - abrt
+      - abrt-libs
       - bash-color-prompt
       - bluez-cups
       - braille-printer-app
@@ -149,6 +151,7 @@
       - cups-filters*
       - fprintd
       - fprintd-pam
+      - gnome-abrt
       - gnome-user-share
       - gutenprint
       - gutenprint-cups
