@@ -161,6 +161,7 @@
       - libppd
       - mediawriter
       - open-vm-tools*
+      - passim
       - rhythmbox
       - virtualbox-guest-additions
     state: absent
