@@ -32,6 +32,7 @@
       - glab
       - glibc-devel
       - glibc-static
+      - glibc-utils
       - gnome-extensions-app
       - gnome-shell-extension-appindicator
       - gnome-shell-extension-apps-menu
