@@ -43,7 +43,7 @@
       - gnome-themes-extra
       - gnome-tweaks
       - gnutls-utils
-      - gperf
+      - golangci-lint
       - httpd-tools
       - ImageMagick
       - inotify-tools
