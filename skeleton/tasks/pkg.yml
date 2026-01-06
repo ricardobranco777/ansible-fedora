@@ -115,6 +115,7 @@
       - tnftp
       - traceroute
       - transmission
+      - umoci
       - unzip
       - vim
       - virt-manager
