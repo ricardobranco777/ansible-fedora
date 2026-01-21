@@ -29,6 +29,7 @@
       - gdisk
       - gh
       - git
+      - git-email
       - glab
       - glibc-devel
       - glibc-static
