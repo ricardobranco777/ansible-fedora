@@ -2,6 +2,7 @@
 - name: Install packages
   dnf:
     name:
+      - 7zip
       - aria2
       - avahi-tools
       - bcc
