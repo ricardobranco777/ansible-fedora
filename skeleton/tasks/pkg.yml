@@ -18,6 +18,7 @@
       - chromium
       - cifs-utils
       - clang
+      - clang-tools-extra
       - cmake
       - curl
       - dejavu-fonts-all
