@@ -65,6 +65,7 @@
       - libvirt-client
       - lldb
       - llvm
+      - low-memory-monitor
       - lsscsi
       - lshw
       - lsof
