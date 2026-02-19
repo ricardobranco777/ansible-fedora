@@ -5,6 +5,7 @@
       - 7zip
       - aria2
       - avahi-tools
+      - b4
       - bcc
       - bcc-doc
       - bind-utils
