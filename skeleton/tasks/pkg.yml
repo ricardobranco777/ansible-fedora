@@ -16,7 +16,6 @@
       - btrfs-progs
       - buildah
       - captree
-      - chromium
       - cifs-utils
       - clang
       - clang-tools-extra
