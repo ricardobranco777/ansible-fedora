@@ -46,7 +46,6 @@
       - gnome-themes-extra
       - gnome-tweaks
       - gnutls-utils
-      - golangci-lint
       - httpd-tools
       - ImageMagick
       - inotify-tools
