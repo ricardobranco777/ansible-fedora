@@ -82,6 +82,7 @@
       - net-tools
       - nss-tools
       - oci-seccomp-bpf-hook
+      - pandoc
       - patch
       - pbzip2
       - perltidy
