@@ -94,6 +94,7 @@
       - python3-devel
       - python3-dnf-plugin-versionlock
       - python3-gpg
+      - python3-paramiko
       - python3-virtualenv
       - qemu-tools
       - rclone
