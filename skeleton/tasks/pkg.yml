@@ -168,6 +168,7 @@
       - libppd
       - mediawriter
       - open-vm-tools*
+      - PackageKit
       - passim
       - rhythmbox
       - virtualbox-guest-additions
