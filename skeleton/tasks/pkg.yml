@@ -77,7 +77,6 @@
       - mtr
       - moreutils
       - nautilus-gsconnect
-      - nawk
       - netcat
       - net-tools
       - nss-tools
