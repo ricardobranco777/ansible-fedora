@@ -130,7 +130,6 @@
       - wodim
       - xdotool
       - xdpyinfo
-      - xorg-x11-server-Xvfb
       - xrandr
       - yq
       - zip
