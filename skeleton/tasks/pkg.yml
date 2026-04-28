@@ -6,8 +6,6 @@
       - aria2
       - avahi-tools
       - b4
-      - bcc
-      - bcc-doc
       - bind-utils
       - blueman-nautilus
       - bmake
@@ -80,7 +78,6 @@
       - netcat
       - net-tools
       - nss-tools
-      - oci-seccomp-bpf-hook
       - pandoc
       - patch
       - pbzip2
