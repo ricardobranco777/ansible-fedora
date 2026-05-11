@@ -167,6 +167,7 @@
       - passim
       - rhythmbox
       - virtualbox-guest-additions
+      - zram-generator
     state: absent
 
 - name: Autoremove unneeded packages installed as dependencies
