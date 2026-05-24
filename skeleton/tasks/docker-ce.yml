@@ -8,12 +8,15 @@
   dnf:
     name:
       - docker-cli
+      - moby-engine-rootless-extras
+      - rootlesskit
     state: absent
 
 - name: Install Docker packages
   dnf:
     name:
       - docker-ce
+      - docker-ce-rootless-extras
     state: present
 
 - name: Modify /etc/default/grub

@@ -3,6 +3,7 @@
   dnf:
     name:
       - docker-ce
+      - docker-ce-rootless-extras
     state: absent
 
 - name: Install Docker packages
@@ -11,6 +12,7 @@
       - docker-cli
       - docker-compose
       - golang-github-rootless-containers-rootlesskit
+      - moby-engine-rootless-extras
     state: present
 
 - name: Modify /etc/default/grub
