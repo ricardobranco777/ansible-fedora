@@ -1,4 +1,10 @@
 ---
+- name: Uninstall Docker CE packages
+  dnf:
+    name:
+      - docker-ce
+    state: absent
+
 - name: Install Docker packages
   dnf:
     name:

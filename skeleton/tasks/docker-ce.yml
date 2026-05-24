@@ -4,6 +4,12 @@
   args:
     creates: /etc/yum.repos.d/docker-ce.repo
 
+- name: Uninstall Fedora Docker packages
+  dnf:
+    name:
+      - docker-cli
+    state: absent
+
 - name: Install Docker packages
   dnf:
     name:
