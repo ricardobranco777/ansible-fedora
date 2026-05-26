@@ -24,3 +24,8 @@
   shell: ln -s /opt/tuxedo-control-center/tuxedo-control-center /usr/bin/
   args:
     creates: /usr/bin/tuxedo-control-center
+
+- name: Remove setuid bit from Chromium sandbox
+  file:
+    path: /opt/tuxedo-control-center/chrome-sandbox
+    mode: u-s,g-s
