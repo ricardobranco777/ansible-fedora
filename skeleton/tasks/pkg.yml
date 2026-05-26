@@ -166,6 +166,7 @@
       - open-vm-tools*
       - PackageKit
       - passim
+      - plocate
       - rhythmbox
       - virtualbox-guest-additions
       - zram-generator
