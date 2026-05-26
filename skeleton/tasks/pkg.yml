@@ -156,6 +156,7 @@
       - fprintd
       - fprintd-pam
       - gnome-abrt
+      - gnome-boxes
       - gnome-user-share
       - gutenprint
       - gutenprint-cups
