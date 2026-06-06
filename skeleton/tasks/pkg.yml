@@ -14,7 +14,6 @@
       - btrfs-progs
       - buildah
       - captree
-      - cargo
       - cifs-utils
       - clang
       - clang-tools-extra
