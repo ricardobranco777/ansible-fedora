@@ -99,6 +99,7 @@
       - rpmconf
       - rsync
       - ruff
+      - rustup
       - setools-console
       - sg3_utils
       - sharutils
