@@ -14,3 +14,5 @@ To install nmap from upstream:
 ansible-playbook -v -i inventory.yml nmap.yml
 sudo dnf versionlock add nmap
 ```
+
+Complement with https://github.com/ricardobranco777/ansible-linux.git
