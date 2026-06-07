@@ -78,6 +78,7 @@
       - netcat
       - net-tools
       - nss-tools
+      - opendoas
       - pandoc
       - patch
       - pbzip2
