@@ -155,6 +155,7 @@
       - cups
       - cups-browsed
       - cups-filters*
+      - flatpak
       - fprintd
       - fprintd-pam
       - gnome-abrt
