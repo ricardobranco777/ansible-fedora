@@ -1,5 +1,6 @@
 ---
 - include_tasks: pkg.yml
+- include_tasks: gnome.yml
 - include_tasks: rpmfusion.yml
 - include_tasks: tuxedo.yml
   when: ansible_virtualization_type == ''

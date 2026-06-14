@@ -1,0 +1,22 @@
+---
+- name: Install GNOME packages
+  dnf:
+    name:
+      - gnome-extensions-app
+      - gnome-shell-extension-appindicator
+      - gnome-shell-extension-apps-menu
+      - gnome-shell-extension-gsconnect
+      - gnome-shell-extension-launch-new-instance
+      - gnome-shell-extension-places-menu
+      - gnome-shell-extension-window-list
+      - gnome-themes-extra
+      - gnome-tweaks
+    state: present
+
+- name: Uninstall GNOME packages
+  dnf:
+    name:
+      - gnome-abrt
+      - gnome-boxes
+      - gnome-user-share
+    state: absent
