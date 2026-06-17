@@ -65,6 +65,7 @@
       - mc
       - mtr
       - moreutils
+      - nasm
       - nautilus-gsconnect
       - netcat
       - net-tools
