@@ -11,6 +11,7 @@
       - gnome-shell-extension-window-list
       - gnome-themes-extra
       - gnome-tweaks
+      - nautilus-gsconnect
     state: present
 
 - name: Uninstall GNOME packages
