@@ -48,6 +48,7 @@
       - lbzip2
       - ldns-utils
       - libarchive-devel
+      - libbpf-devel
       - libbsd-devel
       - libcap-ng-utils
       - libcgroup-tools
