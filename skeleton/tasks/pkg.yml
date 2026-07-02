@@ -76,7 +76,6 @@
       - pandoc
       - patch
       - pbzip2
-      - perl
       - perltidy
       - pigz
       - podman
