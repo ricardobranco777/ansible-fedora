@@ -74,6 +74,7 @@
       - nss-tools
       - opendoas
       - pandoc
+      - pass
       - patch
       - pbzip2
       - perltidy
