@@ -9,7 +9,6 @@
       - bind-utils
       - blueman-nautilus
       - bmake
-      - bpfman
       - bpftool
       - bsdcat
       - bsdtar
