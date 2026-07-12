@@ -52,6 +52,7 @@
       - libbsd-devel
       - libcap-ng-utils
       - libcgroup-tools
+      - libseccomp-devel
       - libva-utils
       - libvirt-client
       - lldb
