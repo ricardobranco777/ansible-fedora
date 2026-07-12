@@ -81,7 +81,6 @@
       - perltidy
       - pigz
       - podman
-      - podman-remote
       - openssl
       - procinfo
       - python3-devel
