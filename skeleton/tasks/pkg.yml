@@ -49,6 +49,7 @@
       - ldns-utils
       - libarchive-devel
       - libbpf-devel
+      - libbpf-tools
       - libbsd-devel
       - libcap-ng-utils
       - libcgroup-tools
