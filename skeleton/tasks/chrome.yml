@@ -10,7 +10,7 @@
       - google-chrome-stable
     state: present
 
-- name: Remove setuid bit from Chrome sandbox
-  file:
-    path: /opt/google/chrome/chrome-sandbox
-    mode: u-s,g-s
+#- name: Remove setuid bit from Chrome sandbox
+#  file:
+#    path: /opt/google/chrome/chrome-sandbox
+#    mode: u-s,g-s

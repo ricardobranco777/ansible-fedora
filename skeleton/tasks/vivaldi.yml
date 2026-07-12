@@ -15,7 +15,7 @@
       - vivaldi-stable
     state: present
 
-- name: Remove setuid bit from Vivaldi sandbox
-  file:
-    path: /opt/vivaldi/vivaldi-sandbox
-    mode: u-s,g-s
+#- name: Remove setuid bit from Vivaldi sandbox
+#  file:
+#    path: /opt/vivaldi/vivaldi-sandbox
+#    mode: u-s,g-s
