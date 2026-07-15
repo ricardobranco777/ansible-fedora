@@ -25,6 +25,14 @@
     - "intel_iommu=on"
     - "iommu=pt"
 
+- name: Copy daemon.json
+  copy:
+    src: docker/daemon.json
+    dest: /etc/docker/daemon.json
+    owner: root
+    group: root
+    mode: '0644'
+
 - name: Enable Docker service
   systemd_service:
     name: docker
