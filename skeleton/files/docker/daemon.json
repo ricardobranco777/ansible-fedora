@@ -6,5 +6,6 @@
   "init": true,
   "ip-forward": true,
   "ipv6": true,
-  "selinux-enabled": true
+  "selinux-enabled": true,
+  "userns-remap": "default"
 }
