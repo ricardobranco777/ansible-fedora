@@ -43,3 +43,13 @@
     enabled: true
     masked: no
     state: started
+
+- name: Copy sysctl files
+  copy:
+    src: "sysctl.d/{{ item }}"
+    dest: "/etc/sysctl.d/{{ item }}"
+    owner: root
+    group: root
+    mode: "0600"
+  loop:
+    - 99-docker.conf
