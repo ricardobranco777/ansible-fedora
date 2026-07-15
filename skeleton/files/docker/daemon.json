@@ -7,6 +7,5 @@
   "ip-forward": true,
   "ipv6": true,
   "selinux-enabled": true,
-  "userland-proxy": false,
-  "userns-remap": "default"
+  "userland-proxy": false
 }
