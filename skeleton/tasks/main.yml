@@ -13,4 +13,5 @@
 - include_tasks: vivaldi.yml
 - include_tasks: nosystemd.yml
 - include_tasks: dnsmasq.yml
+- include_tasks: podman.yml
 - include_tasks: zfs.yml
