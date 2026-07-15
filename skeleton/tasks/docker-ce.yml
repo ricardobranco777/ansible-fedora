@@ -16,7 +16,7 @@
   dnf:
     name:
       - docker-ce
-      - docker-ce-rootless-extras
+      # - docker-ce-rootless-extras
     state: present
 
 - name: Modify /etc/default/grub

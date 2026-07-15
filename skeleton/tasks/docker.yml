@@ -11,8 +11,8 @@
     name:
       - docker-cli
       - docker-compose
-      - golang-github-rootless-containers-rootlesskit
-      - moby-engine-rootless-extras
+      # - golang-github-rootless-containers-rootlesskit
+      # - moby-engine-rootless-extras
     state: present
 
 - name: Modify /etc/default/grub
