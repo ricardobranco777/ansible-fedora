@@ -110,6 +110,7 @@
       - thunderbird
       - tmux
       - tnftp
+      - trace-cmd
       - traceroute
       - transmission
       - umoci
