@@ -1,4 +1,14 @@
 ---
+- name: Install packages
+  dnf:
+    name:
+      - buildah
+      - crun
+      - podman
+      #- podman-remote
+      #- python3-podman
+      - skopeo
+
 # https://github.com/podman-container-tools/podman/discussions/20718
 - name: Configure podman interface for IPv6
   shell: |
@@ -7,3 +17,13 @@
     tee /etc/containers/networks/podman.json
   args:
     creates: /etc/containers/networks/podman.json
+
+- name: Configure podman testsuite
+  copy:
+    src: "containers/containers.conf.d/{{ item }}"
+    dest: "/etc/containers/containers.conf.d/{{ item }}"
+    owner: root
+    group: root
+    mode: "0644"
+  loop:
+    - 99-custom.conf
