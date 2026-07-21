@@ -6,6 +6,7 @@
   "init": true,
   "ip-forward": true,
   "ipv6": true,
+  "live-restore": true,
   "selinux-enabled": true,
   "userland-proxy": false
 }
