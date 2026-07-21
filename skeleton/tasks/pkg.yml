@@ -121,6 +121,7 @@
       - xfsprogs
       - xsel
       - wget
+      - whipper
       - wodim
       - xdotool
       - xdpyinfo
