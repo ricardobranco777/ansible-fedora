@@ -126,6 +126,7 @@
       - xdotool
       - xdpyinfo
       - xrandr
+      - yamllint
       - yq
       - zip
       - zstd
