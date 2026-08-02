@@ -20,6 +20,7 @@
       - clang-tools-extra
       - cmake
       - curl
+      - ddrescue
       - dejavu-fonts-all
       - distribution-gpg-keys
       - e2fsprogs
@@ -38,6 +39,7 @@
       - gnutls-utils
       - httpd-tools
       - ImageMagick
+      - ima-evm-utils
       - inotify-tools
       - jetbrains-mono-fonts-all
       - jq
