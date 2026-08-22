@@ -24,6 +24,7 @@
       - dejavu-fonts-all
       - distribution-gpg-keys
       - dvdbackup
+      - dvd+rw-tools
       - e2fsprogs
       - exfatprogs
       - fakeroot
@@ -38,7 +39,6 @@
       - glibc-static
       - glibc-utils
       - gnutls-utils
-      - growisofs
       - httpd-tools
       - ImageMagick
       - ima-evm-utils
