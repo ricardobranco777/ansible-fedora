@@ -23,6 +23,7 @@
       - ddrescue
       - dejavu-fonts-all
       - distribution-gpg-keys
+      - dvdbackup
       - e2fsprogs
       - exfatprogs
       - fakeroot
@@ -37,6 +38,7 @@
       - glibc-static
       - glibc-utils
       - gnutls-utils
+      - growisofs
       - httpd-tools
       - ImageMagick
       - ima-evm-utils
