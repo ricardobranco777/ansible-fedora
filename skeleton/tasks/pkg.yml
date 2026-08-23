@@ -73,6 +73,8 @@
       - mc
       - mtr
       - moreutils
+      - musl-clang
+      - musl-gcc
       - nasm
       - netcat
       - net-tools
