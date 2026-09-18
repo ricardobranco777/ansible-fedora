@@ -107,6 +107,7 @@
       - ShellCheck
       - skopeo
       - smartmontools
+      - smplayer
       - socat
       - strace
       - subversion
