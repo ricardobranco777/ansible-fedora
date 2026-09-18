@@ -1,0 +1,10 @@
+---
+- name: Modify /etc/default/grub
+  replace:
+    path: /etc/default/grub
+    regexp: '^(GRUB_CMDLINE_LINUX_DEFAULT="[\w](?!.*\b{{ item }}\b).*)"$'
+    replace: '\1 {{ item }}"'
+  with_items:
+    # CONFIG_SLAB_MERGE_DEFAULT is not set on Fedora
+    - "slab_nomerge"
+

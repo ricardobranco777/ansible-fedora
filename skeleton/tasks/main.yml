@@ -15,3 +15,4 @@
 - include_tasks: dnsmasq.yml
 - include_tasks: podman.yml
 - include_tasks: zfs.yml
+- include_tasks: security.yml
