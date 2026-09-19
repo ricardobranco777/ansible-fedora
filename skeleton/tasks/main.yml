@@ -16,3 +16,4 @@
 - include_tasks: podman.yml
 - include_tasks: zfs.yml
 - include_tasks: security.yml
+- include_tasks: grub.yml

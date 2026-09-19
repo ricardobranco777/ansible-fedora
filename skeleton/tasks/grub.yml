@@ -1,0 +1,6 @@
+---
+- name: Disable os-prober
+  lineinfile:
+    path: /etc/default/grub
+    regexp: '^GRUB_DISABLE_OS_PROBER='
+    line: 'GRUB_DISABLE_OS_PROBER="true"'
