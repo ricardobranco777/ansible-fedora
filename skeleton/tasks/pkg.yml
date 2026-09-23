@@ -171,6 +171,8 @@
       - libppd
       - malcontent
       - mediawriter
+      - ntfs-3g
+      - ntfsprogs
       - open-vm-tools*
       - PackageKit
       - passim
