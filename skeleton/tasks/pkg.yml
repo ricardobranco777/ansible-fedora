@@ -178,6 +178,7 @@
       - passim
       - plocate
       - rhythmbox
+      - sssd*
       - virtualbox-guest-additions
       - zram-generator
     state: absent
