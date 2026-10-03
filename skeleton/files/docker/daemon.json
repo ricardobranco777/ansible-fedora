@@ -8,6 +8,5 @@
   "ipv6": true,
   "live-restore": true,
   "selinux-enabled": true,
-  "userland-proxy": false,
-  "userns-remap": "default"
+  "userland-proxy": false
 }
