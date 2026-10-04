@@ -7,7 +7,6 @@
       - avahi-tools
       - b4
       - bind-utils
-      - blueman-nautilus
       - bmake
       - bpftool
       - bsdcat
