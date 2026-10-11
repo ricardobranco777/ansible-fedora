@@ -13,6 +13,7 @@
       - bsdtar
       - btrfs-progs
       - buildah
+      - busybox
       - captree
       - cifs-utils
       - clang
@@ -46,7 +47,6 @@
       - inotify-tools
       - jetbrains-mono-fonts-all
       - jq
-      - kata-containers
       - keepassxc
       - kernel-modules-extra
       - lbzip2
