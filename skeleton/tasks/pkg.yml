@@ -102,6 +102,7 @@
       - rpmconf
       - rsync
       - rubygems
+      - ruby-devel
       - ruff
       - rustup
       - setools-console
