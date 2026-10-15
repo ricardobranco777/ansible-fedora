@@ -101,6 +101,7 @@
       - rpcbind
       - rpmconf
       - rsync
+      - rubygems
       - ruff
       - rustup
       - setools-console
