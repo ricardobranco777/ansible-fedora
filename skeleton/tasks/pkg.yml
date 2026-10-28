@@ -73,6 +73,7 @@
       - mawk
       - mandoc
       - mc
+      - meson
       - mtr
       - moreutils
       - musl-clang
