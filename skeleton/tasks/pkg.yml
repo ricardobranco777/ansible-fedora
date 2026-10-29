@@ -15,6 +15,7 @@
       - buildah
       - busybox
       - captree
+      - cargo
       - cifs-utils
       - clang
       - clang-tools-extra
