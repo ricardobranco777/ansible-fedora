@@ -1,4 +1,12 @@
 ---
+- name: Install Fedora updates-testing repo
+  copy:
+    src: yum.repos.d/fedora-updates-testing.repo
+    dest: /etc/yum.repos.d/fedora-updates-testing.repo
+    owner: root
+    group: root
+    mode: '0644'
+
 - name: Install packages
   dnf:
     name:
