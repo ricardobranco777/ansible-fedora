@@ -195,6 +195,7 @@
       - passim
       - plocate
       - rhythmbox
+      - rsyslog
       - sssd*
       - virtualbox-guest-additions
       - zram-generator
