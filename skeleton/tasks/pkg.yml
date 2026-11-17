@@ -180,6 +180,7 @@
       - flatpak
       - fprintd
       - fprintd-pam
+      - fuse-overlayfs
       - gamemode
       - gutenprint
       - gutenprint-cups
